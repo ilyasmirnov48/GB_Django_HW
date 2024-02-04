@@ -1,0 +1,13 @@
+INFO 2024-02-02 01:06:11,562 autoreload 13428 11008 Watching for file changes with StatReloader
+INFO 2024-02-02 01:06:14,147 views 13428 1120 посещение страницы index в: 2024-02-02 01:06:14.147559
+INFO 2024-02-02 01:06:14,147 basehttp 13428 1120 "GET / HTTP/1.1" 200 844
+INFO 2024-02-02 01:06:40,507 views 13428 1120 посещение страницы about в: 2024-02-02 01:06:40.507472
+INFO 2024-02-02 01:06:40,507 basehttp 13428 1120 "GET /about/ HTTP/1.1" 200 748
+INFO 2024-02-02 01:09:49,515 autoreload 13428 11008 C:\Users\User\Django\Seminars\project_1\my_1_app\views.py changed, reloading.
+INFO 2024-02-02 01:09:50,190 autoreload 11436 10676 Watching for file changes with StatReloader
+INFO 2024-02-02 01:10:01,539 views 11436 14252 посещение страницы about в: 2024-02-02 01:10:01.539498
+INFO 2024-02-02 01:10:01,555 basehttp 11436 14252 "GET /about/ HTTP/1.1" 200 798
+INFO 2024-02-02 01:10:06,791 views 11436 14252 посещение страницы index в: 2024-02-02 01:10:06.791386
+INFO 2024-02-02 01:10:06,791 basehttp 11436 14252 "GET / HTTP/1.1" 200 894
+INFO 2024-02-02 01:10:15,557 views 11436 14252 посещение страницы about в: 2024-02-02 01:10:15.557849
+INFO 2024-02-02 01:10:15,557 basehttp 11436 14252 "GET /about/ HTTP/1.1" 200 798
