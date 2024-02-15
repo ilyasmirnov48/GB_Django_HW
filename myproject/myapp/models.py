@@ -26,9 +26,17 @@ class Product(models.Model):
 
 class Order(models.Model):
     customer = models.ForeignKey(Client, on_delete=models.CASCADE)
-    products = models.ManyToManyField(Product)
+    products = models.ManyToManyField(Product, through='OrderProducts')
     total_price = models.DecimalField(max_digits=10, decimal_places=2)
     date_ordered = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return f'customer: {self.customer}, total_price: {self.total_price}'
+
+
+class OrderProducts(models.Model):
+    order = models.ForeignKey(Order, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.PROTECT)
+
+    def __str__(self):
+        return f'product_name: {self.product.name}'
