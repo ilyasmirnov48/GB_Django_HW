@@ -16,7 +16,7 @@ class Command(BaseCommand):
         for i in range(1, count + 1):
             products_list = random.sample(list(products), 5)
             for product in products_list:
-                total_price = 0
+                total_price = 1
                 total_price += product.price * products_list.count(product)
             orders = Order.objects.create(
                 customer=random.choice(clients),

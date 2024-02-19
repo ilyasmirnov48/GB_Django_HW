@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ client.name }}{% endblock %}
+
+{% block content %}
+<div class="textcols">
+	<div class="textcols-item">
+		<h2>Продукты в заказах за неделю</h2>
+            {% for order in orders_week %}
+            <p>Товары :{{order.order.products.all}}</p>
+            {% for product in order.products.all %}
+            <p>Название товара: {{product.name}}</p>
+            <P>Описание товара : {{product.description}}</p>
+            <p>Цена товара: {{product.price}}</p>
+            {% endfor %}
+            {% endfor %}
+	</div>
+	<div class="textcols-item">
+		<h2>Продукты в заказах за  месяц</h2>
+            {% for order in orders_month %}
+            <p>Товары :{{order.order.products.all}}</p>
+            {% for product in order.products.all %}
+            <p>Название товара: {{product.name}}</p>
+            <P>Описание товара : {{product.description}}</p>
+            <p>Цена товара: {{product.price}}</p>
+            {% endfor %}
+            {% endfor %}
+	</div>
+	<div> class="textcols-item">
+		<h2>Продукты в заказах за  год</h2>
+            {% for order in orders_year %}
+            <p>Товары :{{order.order.products.all}}</p>
+            {% for product in order.products.all %}
+            <p>Название товара: {{product.name}}</p>
+            <P>Описание товара : {{product.description}}</p>
+            <p>Цена товара: {{product.price}}</p>
+            {% endfor %}
+            {% endfor %}
+	</div>
+</div>
+{% endblock %}
